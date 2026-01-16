@@ -404,21 +404,6 @@ await import("//tucomidalista.com/cdn/shopifycloud/shop-js/modules/v2/chunk.comm
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch"/>
 <script data-editor-id="text_ad2d3e94c204">(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 96149242163,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "product"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script data-application="storefront-renderer" data-editor-id="text_485c2ceae710" data-monorail-region="shop_domain" data-page-type="product" data-render-region="gcp-us-central1" data-resource-timing-sampling-rate="10" data-shop-id="96149242163" data-shs="true" data-shs-beacon="true" data-shs-beacon-endpoint="https://tucomidalista.com/api/collect" data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1" data-theme-instance-id="181837431091" data-theme-name="Dawn" data-theme-version="15.4.0" defer="" src="/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.0.3.min.js"></script>
-<script data-editor-id="text_7136e50d331f">// Tu código JavaScript aquí
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1150421717164073');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" src="https://www.facebook.com/tr?id=1150421717164073&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
 <!-- End Meta Pixel Code --><script data-editor-id="text_00d7e6e71602">// Tu código JavaScript aquí
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -438,14 +423,32 @@ document.addEventListener('DOMContentLoaded', function () {
   data-utmify-prevent-subids
   async
   defer
-></script><script data-editor-id="text_d719322920af">// Tu código JavaScript aquí
+></script><script data-editor-id="text_6a82bfb3f1a4">// Tu código JavaScript aquí
 <script>
-  window.pixelId = "6969ac4cbc0b99692165c840";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
+document.addEventListener('DOMContentLoaded', function () {
+  const checkoutUrl = 'https://pay.hotmart.com/W103877259A?checkoutMode=10';
+
+  document.querySelectorAll('.product-form__submit, button[type="submit"]').forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      window.location.href = checkoutUrl;
+    });
+  });
+});
+</script><script data-editor-id="text_098242da9642">// Tu código JavaScript aquí
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const checkoutUrl = 'https://pay.hotmart.com/W103877259A?checkoutMode=10';
+
+  document.querySelectorAll('.product-form__submit, button[type="submit"]').forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      window.location.href = checkoutUrl;
+    });
+  });
+});
 </script></head>
 <body class="gradient">
 <a class="skip-to-content-link button visually-hidden" data-editor-id="text_120f366f30f5" href="https://pay.hotmart.com/W103877259A">
@@ -576,19 +579,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </span>
 </button>
 </modal-opener></div>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const checkoutUrl = 'https://pay.hotmart.com/J103612793T?checkoutMode=10';
-
-  document.querySelectorAll('.product-form__submit, button[type="submit"]').forEach(button => {
-    button.addEventListener('click', function (e) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      window.location.href = checkoutUrl;
-    });
-  });
-});
-</script></li></ul>
+</li></ul>
 <div class="slider-buttons quick-add-hidden small-hide" data-editor-id="text_959b63c4085e">
 <button aria-label="Diapositiva a la izquierda" class="slider-button slider-button--prev" name="previous" type="button">
 <span class="svg-wrapper"><svg class="icon icon-caret" viewbox="0 0 10 6"><path clip-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" fill="currentColor" fill-rule="evenodd"></path></svg>
@@ -1410,14 +1401,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </span>
 </button>
 </modal-opener></div>
-<script data-editor-id="text_ebd959618c51">
-  window.pixelId = "6969ac4cbc0b99692165c840";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script></li></ul>
+</li></ul>
 <div class="slider-buttons quick-add-hidden small-hide" data-editor-id="text_ee9b9466101f">
 <button aria-label="Diapositiva a la izquierda" class="slider-button slider-button--prev" name="previous" type="button">
 <span class="svg-wrapper"><svg class="icon icon-caret" viewbox="0 0 10 6"><path clip-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" fill="currentColor" fill-rule="evenodd"></path></svg>
@@ -1457,7 +1441,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 $126.300,00 COP
               
             </s>
-</span><span class="visually-hidden visually-hidden--inline" data-editor-id="text_e453d2b0e561">Precio de oferta</span>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const checkoutUrl = 'https://pay.hotmart.com/W103877259A?checkoutMode=10';
+
+  document.querySelectorAll('.product-form__submit, button[type="submit"]').forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      window.location.href = checkoutUrl;
+    });
+  });
+});
+</script></span><span class="visually-hidden visually-hidden--inline" data-editor-id="text_e453d2b0e561">Precio de oferta</span>
 <span class="price-item price-item--sale price-item--last" data-editor-id="text_570883b8b907">
           $37.900,00 COP
         </span>
